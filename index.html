@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>FuelUX</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Favicon-->
+    <link href="data:image/png;base64,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" rel="icon" type="image/x-icon">
+	
+	<script type="text/javascript">
+		var fuelPaths = {
+			'fuel-examples-path': '../docs/',
+			'fuel-controls': '../fuelux-controls'
+		};
+	</script>
+	
+	<!-- Load post built CSS -->
+	<link href="../themes/fuelstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/docs.css" rel="stylesheet" type="text/css" />
+	<link href="../themes/fuelstrap-responsive.css" rel="stylesheet" type="text/css" />
+	
+	<link href="css/prettify.css" rel="stylesheet" type="text/css" />
+
+	<!-- Load Post Built Core -->
+	<script src="../fuelux-core.js" type="text/javascript"></script>
+	<script src="../fuelux-controls.js" type="text/javascript"></script>
+	
+	<!-- Load post built Bootstrap -->
+	<script src="../lib/bootstrap/bootstrap.js" type="text/javascript"></script>
+	
+	<!-- Pretty Code -->
+	<script src="../lib/bootstrap/prettify.js" type="text/javascript"></script>
+	
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script>
+		require(['fuel-jquery', 'fuel-backbone', 'fuel-controls'], function ($, Backbone) {
+			$(function(){
+				$(".nav-main").on("click", function(event){
+					$(".nav-main").closest("li").removeClass("active");
+					$(this).closest("li").addClass("active");
+				});
+
+				// checkbox group
+				$('#example1').fuelCheckboxGroup({
+					name: 'group1',
+					items:[
+						{ label:'lorem ipsum1b', value:'value1', id:"value1", checked:false, disabled:true },
+						{ label:'lorem ipsum2b', value:'value2', id:"value2", checked:true, disabled:false },
+						{ label:'lorem ipsum3b', value:'value3', id:"value3", checked:false, disabled:false }
+					]
+				});
+
+				function loadFixNav(){
+					// fix sub nav on scroll
+					var win = $(window)
+					  , nav = $('.subnav')
+					  , navTop = $('.subnav').length && $('.subnav').offset().top - 40
+					  , isFixed = 0;
+
+					processScroll();
+					win.off('scroll');
+					win.on('scroll', processScroll);
+
+					function processScroll() {
+					  var i, scrollTop = win.scrollTop()
+					  if (scrollTop >= navTop && !isFixed) {
+						isFixed = 1;
+						nav.addClass('subnav-fixed');
+					  } else if (scrollTop <= navTop && isFixed) {
+						isFixed = 0;
+						nav.removeClass('subnav-fixed');
+					  }
+					}
+				}
+
+
+				function loadContent(html) {
+					$("#contentRegion").hide();
+					$("#contentRegion").html(html).fadeIn(1000);
+					//loadFixNav();
+
+
+
+					// make code pretty
+    				window.prettyPrint && prettyPrint();
+				}
+
+				// Top level application router
+				var Router = Backbone.Router.extend({
+
+					routes: {
+						'controls':	'showControls',
+						'components':	'showComponents',
+						'core':	'showCore'
+
+					},
+
+					showControls: function() {
+						require(['tmpl!fuel-examples-path/controls.html'],function(template){
+							loadContent(template());
+						});
+					},
+
+					showComponents: function () {
+						require(['tmpl!fuel-examples-path/components.html'],function(template){
+							loadContent(template());
+						});
+					},
+
+					showCore: function () {
+						require(['tmpl!fuel-examples-path/core.html'],function(template){
+							loadContent(template());
+						});
+					}
+
+				});
+
+				// Application startup
+				var router = new Router();
+				Backbone.history.start();
+
+			});
+		});
+
+	</script>
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+         		 </a>
+				<a class="brand" href="default.html">FuelUX</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="#core" class="nav-main">Core</a>
+						</li>
+						<li>
+							<a href="#controls" class="nav-main">Controls</a>
+						</li>
+						<li>
+							<a href="#components" class="nav-main">Components</a>
+						</li>
+					</ul>
+					<!--<form class="navbar-search pull-left" action="">
+					<input type="text" class="search-query span2" placeholder="Search">
+					</form>-->
+					<ul class="nav pull-right">
+						<li class="divider-vertical"></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Download <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">fuelux-core.js</a></li>
+								<li><a href="#">fuelux-controls.js</a></li>
+								<li><a href="#">fuelux-components.js</a></li>
+								<li class="divider"></li>
+								<li class="nav-header">Contribute</li>
+								<li><a href="#">GitHub</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.nav-collapse -->
+			</div>
+		</div><!-- /navbar-inner -->
+	</div>
+    <div class="container">
+		<div id="contentRegion">
+			<div class="hero-unit">
+				<h1>FuelUX Platform</h1>
+				<p>Some compelling content about the FuelUX Platform Some compelling content about the FuelUX Some compelling content about the FuelUX Platform can go here...Some compelling content about the FuelUX Platform can go here...Some compelling content about the FuelUX Platform can go here...Some compelling content about the FuelUX Platform can go here...</p>
+				<p>
+					<a class="btn btn-inverse btn-large" href="#core">Learn about Core</a> &nbsp; &nbsp;
+					<a class="btn btn-inverse btn-large" href="#controls">Learn about Controls</a> &nbsp; &nbsp;
+					<a class="btn btn-inverse btn-large" href="#components">Learn about Components</a>
+				</p>
+			</div>
+
+			<div id="example1"></div>
+
+			<!-- Core
+			================================================== -->
+			<section style="padding-top: 30px;">
+			  <div class="page-header">
+				<h1>FuelUX Core <small>The nuts and bolts of FuelUX</small></h1>
+			  </div>
+
+			  <div class="row">
+				<div class="span4">
+					<h2>Globalize</h2>
+					<p>
+					  It enables complex culture-aware number and date parsing and formatting, including the raw culture information for hundreds of different languages and countries, as well as an extensible system for localization.
+					</p>
+				</div>
+				<div class="span4">
+					<h2>RequireJS</h2>
+					<p>
+						RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code.
+					</p>
+				</div>
+				<div class="span4">
+					<h2>Handlebars</h2>
+					<p>
+					Handlebars provides the power necessary to let you build semantic templates effectively with no frustration. Mustache templates are compatible with Handlebars, so you can take a Mustache template, import it into Handlebars, and start taking advantage of the extra Handlebars features.
+					</p>
+				</div>
+			  </div>
+			  <div class="row top-pad">
+				  <div class="span12">
+					  <a class="btn btn-primary btn-small" href="#core">Learn about Core</a>
+				  </div>
+			  </div>
+			</section>
+			
+			<!-- Controls
+			================================================== -->
+			<section>
+			  <div class="page-header">
+				<h1>FuelUX Controls <small>Easy to use controls with minimal code</small></h1>
+			  </div>
+
+			  <div class="row">
+				<div class="span6">
+					<h2>Buttons</h2>
+					<p>
+						Access to simple styled buttons via input, button, or even link elements. The button library contains various sizes, colors, and states. Adding icons to buttons is a snap.
+					</p>
+				</div>
+				<div class="span6">
+					<h2>Modal Dialogs</h2>
+					<p>
+						Modal windows, also referred to as dialog windows, are very useful in web applications and can easily be applied. They have great benefits such as alerts, accepting form information from a user, images, and more.
+					</p>
+				</div>
+			  </div>
+			  <div class="row top-pad">
+				  <div class="span12">
+					  <a class="btn btn-primary btn-small" href="#controls">Learn about Controls</a>
+				  </div>
+			  </div>
+			</section>
+
+			<!-- Components
+			================================================== -->
+			<section style="padding-bottom: 30px;">
+			  <div class="page-header">
+				<h1>FuelUX Components <small>Custom tools that work with data</small></h1>
+			  </div>
+
+			  <div class="row">
+				<div class="span4">
+					<h2>Editor</h2>
+					<p>
+						The FuelUX Editor component is an innovative tool that bridges a typical WYSIWYG editor with the ability to drag and drop widgets/gears (such as video, images, forms, polls, etc) to build ExactTarget emails and landing pages.
+					</p>
+				</div>
+				<div class="span4">
+					<h2>File Upload</h2>
+					<p>
+						The File Upload component is a unique tool that allows you to select a file or drag and drop multiple files to easily upload them.
+					</p>
+				</div>
+				<div class="span4">
+					<h2>Campaign Selector</h2>
+					<p>
+						Campaign selector is a custom component built so ExactTarget customers can easily manage their campaign associations for their emails.
+					</p>
+				</div>
+			  </div>
+			  <div class="row top-pad">
+				  <div class="span12">
+					  <a class="btn btn-primary btn-small" href="#components">Learn about Components</a>
+				  </div>
+			  </div>
+			</section>
+
+		</div>
+		<footer class="footer">
+			<p class="pull-right"><a href="http://www.exacttarget.com">ExactTarget</a></p>
+			<p>ExactTarget FuelUX Copyright &copy; 2012</p>
+		</footer>
+    </div> <!-- /container -->
+
+</body>
+</html>
